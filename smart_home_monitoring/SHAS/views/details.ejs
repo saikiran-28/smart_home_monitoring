@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="english">
+<head text="white">
+
+  <link href="/stylesd.css" rel="stylesheet" type="text/css"/>
+
+<title>FRIDAY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+  <div class="header" id="myHeader">
+    <h1>  <font size="+3">SMART HOME MONITORING SYSTEM</font></h1>
+  <marquee><h3>Created by Sai_Aditya</h3></marquee>
+
+<div class="navbar">
+    <a href="/">HOME</a>
+    <a href="/details">DETAILS</a>
+  </div>
+</div>
+
+<div class="content">
+   
+<h2><strong>Overview:-</strong></h2>
+<p>
+    This is a Smart Home Monitoring System using Raspberry Pi. Here different
+    sensors from different rooms get their data<br> and send to one particular
+    device and these readings are read by Raspberry Pi and updates periodically<br>
+    on the screen in a webpage in a local server.
+</p>
+<br>
+<p>
+    <h3>This project consists of 3 stages</h3>
+</p>
+<p>
+    <strong>Stage 1:</strong>
+</p>
+<p>
+    Different sensors connect to Nodemcu in each room connected to each other
+    through Mesh Networks.<br> All the data from each node is sent to one major
+    node connected to Raspberry Pi.
+</p>
+<p>
+    <strong>Stage 2:</strong>
+</p>
+<p>
+    Data is taken form the node which is connected to Raspberry Pi is saved in
+    JSON format.
+</p>
+<p>
+    <strong>Stage 3:</strong>
+</p>
+<p>
+    A webpage is created and the sensor details are updated periodically. <br>The
+    sensor data is taken from the JSON file.
+</p></div>
+<div class="lan"> 
+<p>
+   <h3> <strong>Languages and device used:</strong></h3>
+</p>
+        <strong><em>1. c/c++</em></strong>
+        to read data form sensors programed into Nodemcu board.
+        <br>
+        <strong><em>2. python</em></strong>
+        used to read data from the Nodemcu to Raspberry Pi.
+        <br>
+        <strong><em>3 JavaScript</em></strong>
+        <em> </em>
+        script is run on Raspberry Pi to display a webpage and update
+        periodically.
+        <br>
+        <strong><em>4. HTML</em></strong>
+        and <strong><em>CSS</em></strong> for webpage
+      
+<p>
+   <h3><strong>Credits:</strong></h3>
+</p>
+<p> 1. Taking the sensor data and communicating with each other </p>
+<p>   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  --Sai Kiran Jaligama</p>
+<p>   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  --Sai Aditya Devulapalli</p>
+
+<p> 2. Reading data to Raspberry Pi from nodes and updating JSON </p>
+<p>   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  --Sai Aditya Devulapalli</p>
+<p>   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  --Sai Kiran Jaligama</p>
+
+<p> 3. Running JavaScript to update values </p>
+<p>   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  --Sai Aditya Devulapalli</p>
+</div>
+ 
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+   
+  function myFunction() {
+    
+     if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    } 
+  }
+  </script>
+
+</body>
+</html>

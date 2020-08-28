@@ -1,0 +1,82 @@
+* {
+box-sizing:border-box;
+
+}
+body {
+  font-family:Apple Chancery, cursive;
+  margin:0;
+  background-image: url("./-10700.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header { 
+  padding:30px;
+  text-align:center;
+  background:rgba(37, 39, 37, 0.966);
+  color:rgb(42, 250, 0);
+  font-family: 'Luminari, fantasy';
+}
+
+.header h1 {
+  font-size:20px; 
+  color:rgb(42, 250, 0);
+  font-family:   Verdana, Geneva, Tahoma, sans-serif ;
+}
+.content{
+   font-family:Apple Chancery, cursive;color:whitesmoke;padding:30px;
+   font-size: larger;
+   text-align: center;
+    
+}
+.lan{
+  font-family:Apple Chancery, cursive;color:#fff;padding:30px;
+   font-size: larger;
+   text-align: left;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 250px;
+}
+.navbar {
+  
+  overflow:hidden;
+  background:rgba(244, 245, 244, 0);
+}
+.navbar a {
+   
+  float:left;
+  display:block;
+  color:white;
+  text-align:center;
+  padding:10px 10px;
+}
+.navbar a:hover {
+  background:rgb(15, 69, 216);
+  color: white;
+} 
+
+.main {   
+  -ms-flex:100%;
+  flex:100%;
+  background-color:white;
+  padding:20px;
+}
+ 
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction:column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    width:100%;
+  }
+}

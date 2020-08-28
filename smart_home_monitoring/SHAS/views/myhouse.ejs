@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="english">
+<head text="white">
+
+  <link href="/styles.css" rel="stylesheet" type="text/css"/>
+
+<title>FRIDAY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  th {
+    border: 7px solid rgb(107, 110, 105);
+  }
+  
+  #table1 {
+    border-collapse: separate;
+    border-spacing: 20px 30px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>  <font size="+3">SMART HOME MONITORING SYSTEM</font></h1>
+  <marquee><h3>Created by Sai_Aditya</h3></marquee>
+</div>
+
+<div class="navbar">
+  <h3><a href="/">HOME</a>
+  <a href="/details">DETAILS</a></h3>
+</div>
+<br>
+<center> <h1 style="color:rgb(255, 255, 255);">Data Analysis....</h1> 
+ 
+  <div class="main">
+    <table id="table1"  border="15" align="center" width="700">
+      <tr>
+        <th>
+             <h2>ROOM-1</h2>
+             <P>TEMPERATURE:<%= data.temp1 %> DEGREES</P>
+             <P>HUMIDITY:<%= data.hum1 %>%</P>
+             <br></th>
+        <th><h2>ROOM-2</h2>
+             <P>TEMPERATURE:<%= data.temp2 %> DEGREES</P>
+             <P>HUMIDITY:<%= data.hum2 %>%</P>
+             <br></th>
+      </tr>
+    </table>
+     </div>
+
+</center>
+<br><br>  
+
+<script type="text/javascript">
+  setInterval("my_function();",5000); 
+ 
+    function my_function(){
+        window.location = location.href;
+    }
+</script>
+
+<div class="footer">
+  <font size="+2"><h3>Contact information </h3><p>email - dsaiaditya@gmail.com</p></font><h2></h2>
+</div>
+
+</body>
+</html>
